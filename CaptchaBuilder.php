@@ -396,7 +396,7 @@ class CaptchaBuilder implements CaptchaBuilderInterface
         }
 
         if ($font === null) {
-            $font = __DIR__ . '/Font/captcha'.$this->rand(0, 5).'.ttf';
+            $font = __DIR__ . DIRECTORY_SEPARATOR . 'Font'. DIRECTORY_SEPARATOR .'captcha'.$this->rand(0, 5).'.ttf';
         }
 
         if (empty($this->backgroundImages)) {
